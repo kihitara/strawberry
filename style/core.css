@@ -1,0 +1,265 @@
+/* ---------------- Font settings ---------------- */
+
+/** Removes the white background from footer which overrides everything **/
+html {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+/** Background colour of whole page **/
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #525252;
+    padding: 0;
+    margin: 0;
+    background-color:#444444;
+    background-image: url([[pix:theme|bg]])
+}
+
+/** Background colour of the central part where all content is **/
+#wrapper {
+    padding: 0;
+    border: none;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 840px;
+    background-color: transparent;
+}
+
+#page-content {
+    min-width: 840px;
+}
+
+#page-content .region-content {
+    overflow: hidden;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#region-main .region-content {
+    background-color: #FFFFFF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Times New Roman";
+    color: [[setting:themecolor]];
+    padding: 2px;
+    text-transform: uppercase;
+}
+
+a { 
+    color: [[setting:themecolor]];
+    text-decoration: none;
+}
+
+a:hover { 
+    text-decoration: none;
+    color: #000000;
+}
+
+ol, ul, dl {
+    margin-left: 1em;
+}
+
+/* ---------------- Header banner ---------------- */
+
+/* Logo at top of page */
+/* The logo is controlled by the settings page */
+
+#page-header {
+    position:relative;
+    background-color: #FFFFFF;
+    background-image: url([[pix:theme|header]]);
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 216px;
+    }
+
+#page-header .sitelogo {
+    float:left;
+    }
+
+.headermain {
+    display: none;
+}
+
+/* ---------------- Login information ---------------- */
+
+/* Login info at the top */
+.toplogin {
+    width: 840px;
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2px;
+}
+
+.toplogin .logininfo {
+    color: #FFFFFF;
+    font-size: 0.8em;
+    color: #adad7b;
+}
+
+.toplogin .logininfo a {
+    color: #adad7b;
+    text-decoration: underline;
+}
+
+.toplogin .logininfo a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* Login info at the bottom */
+
+#page-footer .logininfo {
+    color: #adad7b;
+}
+
+#page-footer .logininfo a {
+    color: #adad7b;
+    text-decoration: underline;
+}
+
+#page-footer .logininfo a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* ---------------- Footer ---------------- */
+
+#page-footer {
+    color: #adad7b;
+    font-size: 0.8em;
+}
+
+#page-footer a {
+    color: #adad7b;
+    text-decoration: underline;
+}
+
+#page-footer a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/* ---------------- Boxes and buttons site wide ---------------- */
+
+.generalbox {
+    border: none;
+    padding: 5px;
+}
+
+.singlebutton {
+    text-align: center;
+}
+
+.continuebutton {
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.navbutton {
+    float: none;
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.expandall,
+.collapseall {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 2px;
+    border: 1px solid #525252;
+}
+
+/* ---------------- Redirect page ---------------- */
+/* Like after posting to a forum */
+
+.redirectmessage {
+    text-align: center;
+}
+
+/* The div for the whole redirect page */
+.pagelayout-redirect #page {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 200px;
+    padding-top: 125px;
+    border-color: [[setting:themecolor]];
+    border-width: 10px;
+    border-style: solid;
+    background-color: #FFFFFF;
+}
+
+/* ---------------- List of categories ---------------- */
+.numberofcourse {
+    float: right;
+}
+
+.categorylist {
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+}
+
+.categorylist .indentation {
+    width: 100%;
+}
+
+/* First sub-category level */
+.indentation .numberofcourse {
+    padding-right: 20px;
+}
+
+/* Second sub-category level */
+.indentation .indentation .numberofcourse {
+    padding-right: 40px;
+}
+
+/* Third sub-category level */
+.indentation .indentation .indentation .numberofcourse {
+    padding-right: 60px;
+}
+
+/* Fourth sub-category level */
+.indentation .indentation .indentation .indentation .numberofcourse {
+    padding-right: 80px;
+}
+
+/* If you are going into five or more sub-category levels
+  please keep adding as per the pattern above */
+
+/* ---------------- Admin pages fixes ---------------- */
+
+#adminsettings .form-item .form-label {
+    width: 8em;
+}
+
+#adminsettings .form-item .form-setting {
+    margin-left: 9em;
+}
+
+#adminsettings .form-item .form-description {
+    margin-left: 9em;
+}
+
+#adminsettings textarea {
+    width: 430px;
+}

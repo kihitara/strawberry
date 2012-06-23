@@ -1,0 +1,130 @@
+#page-content .block-region .region-content {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#region-post {
+    background-image: url([[pix:theme|right_middle]]);
+    background-repeat: repeat-y;
+    background-position: top left;
+}
+
+.side-post-top {
+    background-image: url([[pix:theme|right_top]]);
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 62px;
+}
+
+/* ---------------- Blocks ---------------- */
+
+/** Override the region width **/
+#page-content #region-main-box {float:left;left:240px;position:relative;width:200%;}
+#page-content #region-post-box {float:left;left:50%;margin-left:-480px;position:relative;width:100%;}
+#page-content #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
+#page-content #region-main {margin-right:0px;margin-left:480px;overflow:hidden;}
+#page-content #region-pre {float:left;left:240px;overflow:hidden;position:relative;width:240px;margin-left:-50%;}
+#page-content #region-post {float:left;left:0px;overflow:hidden;position:relative;width:240px;}
+
+/** Only side pre **/
+.side-pre-only #page-content #region-post-box {margin-left:-240px;}
+.side-pre-only #page-content #region-main {margin-left:240px;}
+.side-pre-only #page-content #region-pre {left:0px;}
+.side-pre-only #page-content #region-post {width:0px;}
+
+/** Only side post **/
+.side-post-only #page-content #region-main-box {left:0px;}
+.side-post-only #page-content #region-post-box {margin-left:-236px;}
+.side-post-only #page-content #region-main {margin-left:236px;}
+.side-post-only #page-content #region-pre {width:0px;}
+.has_dock.side-post-only .page-middle #region-main {margin-left:240px;}
+
+/** Moving block when side-post-only **/
+.blocks-moving.side-post-only #page-content #region-main-box {left:240px;width:200%;}
+.blocks-moving.side-post-only #page-content #region-post-box {margin-left:-480px;}
+.blocks-moving.side-post-only #page-content #region-main {margin-left:480px;}
+.blocks-moving.side-post-only #page-content #region-pre {left:240px;width:240px;}
+.blocks-moving.side-post-only #page-content #region-post {left:0px;width:240px;}
+
+/** No blocks whatsoever **/
+.content-only #page-content {min-width:0;}
+.content-only #page-content #region-main-box {left:0px;}
+.content-only #page-content #region-post-box {margin-left:0px;}
+.content-only #page-content #region-main {margin-left:0px;}
+.content-only #page-content #region-pre {left:0;width:0px;}
+.content-only #page-content #region-post {width:0;}
+
+/** Report layout **/
+.pagelayout-report #report-main-content .region-content {margin-left:240px;}
+.pagelayout-report #report-region-pre {width:240px;}
+
+/** Correct for right to left languages **/
+.dir-rtl.pagelayout-report #report-main-content .region-content {margin-left:0;margin-right:240px;}
+
+/** Stabalise IE6 behaviour on the report layout **/
+.ie6.pagelayout-report #report-region-wrap {float:none;width:240px;left:auto;position:absolute;top:0;}
+
+/************* colours *************/
+.block {
+    border: none;
+    color: #484848;
+}
+
+.block a {
+    color: #484848;
+    text-decoration: underline;
+}
+
+.block a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+.block .header {
+    height: 25px;
+    background-color: #7C896D;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.block .header h2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.block .content {
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.block .newlink,
+.block .footer {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.block .minicalendar th,
+.block .minicalendar td {
+    border: none;
+}
+
+.block .minicalendar .weekdays {
+    border-top: 2px solid #7C896D;
+    border-bottom: 2px solid #7C896D;
+}
+
+.block .minicalendar td.today {
+    background-color: #7C896D;
+}
+
+.block .minicalendar td.today a {
+    color: #FFFFFF;
+}

@@ -1,0 +1,74 @@
+#custommenu {
+    border: none;
+    position: absolute;
+    top: 140px;
+    width: 600px;
+    max-height: 55px;
+}
+
+.yui3-skin-sam .yui3-menu-content,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
+    border: none;
+    text-align: center;
+}
+
+
+#custommenu .yui3-menu-horizontal .yui3-menu-label,
+#custommenu .yui3-menu-horizontal .yui3-menuitem {
+    border: none;
+    background-image: url([[pix:theme|menu_right]]);
+    background-position: top left;
+    background-repeat: repeat-x;
+    height: 60px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-left: 5px;
+}
+
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem,
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible {
+    height: 20px;
+    background-image: none;
+}
+
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label {
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
+    background-image:url([[pix:theme|horizontal-menu-submenu-indicator]]);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+/* Argh seriously, this is not working how it should...
+  where is that blue sprite so I can find and destroy it? */
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem-active,
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible .yui3-menu-label-active,
+#custommenu .yui3-menu .yui3-menu .yui3-menu-label-active {
+    background-color: [[setting:themecolor]];
+}
+
+.yui3-skin-sam .yui3-menu .custom_menu_submenu .yui3-menu-content {
+    border: 1px solid [[setting:themecolor]];
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+#custommenu .yui3-menuitem-active,
+#custommenu .yui3-menuitem-active .yui3-menuitem-content,
+.yui3-menulabel .yui3-menulabel-active .yu3-menulabel-menuvisible,
+.yui3-skin-sam .yui3-menu-label-active,
+.yui3-skin-sam .yui3-menulabel-menuvisible,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-active,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-active .yui3-menuitem-content,
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-menuvisible,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-active,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
+    /* background-color: [[setting:themecolor]]; */
+    color: #FFFFFF;
+}
