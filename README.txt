@@ -24,6 +24,26 @@ some limitations:
 - Content items in your course that are wider than
   the content area may cause issues (such as large
   images).
+  
+****************** Installing *******************
+
+If you downloaded from Moodle.org
+- Unzip the compressed file
+- Copy the strawberry folder into your Moodle
+  theme directory.
+- Log into your Moodle site as administrator and
+  go to the Site admin > Notification page to
+  install the Strawberry plugin.
+  
+If you downloaded from github
+- Unzip the compressed file
+- Rename 'kihitara-moodle-theme_strawberry-NUMBERS'
+  folder to 'strawberry'
+- Copy the strawberry folder into your Moodle
+  theme directory.
+- Log into your Moodle site as administrator and
+  go to the Site admin > Notification page to
+  install the Strawberry plugin.
 
 ****************** Change log *******************
 24/06/12
