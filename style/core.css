@@ -82,9 +82,52 @@ ol, ul, dl {
 #page-header .sitelogo {
     float:left;
     }
+    
+#page-header .langmenu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
 
-.headermain {
-    display: none;
+#page-header .maintitle {
+    width: 340px;
+    max-height: 90px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 16pt;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+#page-header .mainsubtitle {
+    width: 340px;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    color: #A4A0A0;
+}
+
+#page-header .autotitle {
+    width: 340px;
+    max-height: 120px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16pt;
+    font-family: "Times New Roman";
+    font-weight: bolder;
+    overflow: hidden;
 }
 
 /* ---------------- Navigation bar ---------------- */

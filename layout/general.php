@@ -32,6 +32,18 @@ if (!empty($PAGE->theme->settings->logo)) {
     $logourl = $OUTPUT->pix_url('banner', 'theme');
 }
 
+if (!empty($PAGE->theme->settings->maintitle)) {
+    $maintitle = $PAGE->theme->settings->maintitle;
+} else {
+    $maintitle = 'Strawberry Theme';
+}
+
+if (!empty($PAGE->theme->settings->maintitle)) {
+    $mainsubtitle = $PAGE->theme->settings->mainsubtitle;
+} else {
+    $mainsubtitle = 'Your Subtitle Here';
+}
+
 if (!empty($PAGE->theme->settings->footnote)) {
     $footnote = $PAGE->theme->settings->footnote;
 } else {
@@ -59,11 +71,22 @@ echo $OUTPUT->doctype() ?>
 <?php if ($hasheading || $hasnavbar) { ?>
 
     <div id="page-header" class="clearfix">
-	<img class="sitelogo" src="<?php echo $logourl; ?>" alt="Custom logo here" />
+	<?php
+	    if (($PAGE->theme->settings->texttitle)==1) {
+		echo '<div class="maintitle">'.$maintitle.'</div>';
+		echo '<div class="mainsubtitle">'.$mainsubtitle.'</div>';
+	    }
+	    else if (($PAGE->theme->settings->texttitle)==2) {
+		echo '<div class="autotitle">'.$PAGE->heading.'</div>';
+	    }
+	    else {
+		echo '<img class="sitelogo" src='.$logourl.' alt="Custom logo here />';
+	    }
+	?>
 
 	        <?php if ($hasheading) { ?>
 		
-		    	<h1 class="headermain"><?php echo $PAGE->heading ?></h1>
+		    	<h1 class="headermain"><!-- Leave this here --></h1>
     		    <div class="headermenu">
         			<?php
 		           		if (!empty($PAGE->layout_options['langmenu'])) {
