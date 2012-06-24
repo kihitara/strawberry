@@ -14,8 +14,8 @@ if ($ADMIN->fulltree) {
 $name = 'theme_strawberry/themecolor';
 $title = get_string('themecolor','theme_strawberry');
 $description = get_string('themecolordesc', 'theme_strawberry');
-$default = '#6ec13a';
-$choices = array('#6ec13a'=>'green', '#990000'=>'red');
+$default = '#589d2f';
+$choices = array('#589d2f'=>'green', '#990000'=>'red');
 $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
 $settings->add($setting);
 

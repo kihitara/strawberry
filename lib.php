@@ -30,7 +30,7 @@ function strawberry_set_themecolor($css, $themecolor) {
     $tag = '[[setting:themecolor]]';
     $replacement = $themecolor;
     if (is_null($replacement)) {
-        $replacement = '#6ec13a';
+        $replacement = '#589d2f';
     }
     $css = str_replace($tag, $replacement, $css);
     return $css;

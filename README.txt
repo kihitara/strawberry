@@ -2,13 +2,14 @@
 ****************** Strawberry *******************
 *************************************************
 
-Strawberry is a fixed-width, three column theme
+Strawberry is a fixed-width, two column theme
 for Moodle 2.
 
 It has a basic settings page with the following
 functions:
-- Easy setting of theme colour from a list
-- Changing the logo
+- Easy setting of theme colour between green &
+  red
+- Changing the logo, custom title, or auto title
 - Adding a footnote
 - Removing the link to moodlebites.com in footer
 - Custom CSS box
@@ -25,6 +26,9 @@ some limitations:
   images).
 
 ****************** Change log *******************
+24/06/12
+- Strawberry is ready for release into the wild
+
 23/06/12
 - Strawberry theme was born
 
