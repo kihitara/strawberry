@@ -87,6 +87,25 @@ ol, ul, dl {
     display: none;
 }
 
+/* ---------------- Navigation bar ---------------- */
+
+.navbar {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 600px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: #FFFFFF;
+}
+
+.navbar a:hover {
+    color: #000000;
+}
+
 /* ---------------- Login information ---------------- */
 
 /* Login info at the top */

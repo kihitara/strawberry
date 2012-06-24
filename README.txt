@@ -13,6 +13,17 @@ functions:
 - Removing the link to moodlebites.com in footer
 - Custom CSS box
 
+**************** Things to note *****************
+
+Because this is a fixed-width theme, there are
+some limitations:
+- The custom menu does not wrap well, so you can't
+  have more items in there than fit horizontally.
+- The navigation bar will cut off at 600 pixels.
+- Content items in your course that are wider than
+  the content area may cause issues (such as large
+  images).
+
 ****************** Change log *******************
 23/06/12
 - Strawberry theme was born

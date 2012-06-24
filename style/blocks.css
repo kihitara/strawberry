@@ -7,12 +7,14 @@
     background-image: url([[pix:theme|right_middle]]);
     background-repeat: repeat-y;
     background-position: top left;
+    background-color: #d5e6bc;
 }
 
 .side-post-top {
     background-image: url([[pix:theme|right_top]]);
     background-repeat: no-repeat;
     background-position: top left;
+    background-color: #FFFFFF;
     height: 62px;
 }
 
@@ -81,7 +83,7 @@
 }
 
 .block .header {
-    height: 25px;
+    min-height: 25px;
     background-color: #7C896D;
     padding-top: 2px;
     padding-left: 5px;
@@ -127,4 +129,8 @@
 
 .block .minicalendar td.today a {
     color: #FFFFFF;
+}
+
+.block .content h3.eventskey {
+    color: #484848;
 }

@@ -1,5 +1,5 @@
 #custommenu {
-    border: none;
+    border: none !important;
     position: absolute;
     top: 140px;
     width: 600px;
@@ -10,8 +10,9 @@
 .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content,
 .yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label,
 .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {
-    border: none;
+    border: none !important;
     text-align: center;
+    color: #FFFFFF;
 }
 
 
@@ -25,18 +26,21 @@
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-left: 5px;
+
 }
 
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem,
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible {
     height: 20px;
     background-image: none;
+    margin-left: 0;
 }
 
 #custommenu .yui3-menu .yui3-menu .yui3-menu-label {
     height: 20px;
     background-repeat: no-repeat;
     background-position: center right;
+    margin-left: 0;
 }
 
 #custommenu .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
@@ -45,18 +49,27 @@
     background-position: center right;
 }
 
-/* Argh seriously, this is not working how it should...
-  where is that blue sprite so I can find and destroy it? */
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem-active,
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menuitem-active .yui3-menuitem-content,
+#custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible,
 #custommenu .yui3-menu .custom_menu_submenu .yui3-menu-label-menuvisible .yui3-menu-label-active,
 #custommenu .yui3-menu .yui3-menu .yui3-menu-label-active {
     background-color: [[setting:themecolor]];
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .yui3-skin-sam .yui3-menu .custom_menu_submenu .yui3-menu-content {
-    border: 1px solid [[setting:themecolor]];
-    margin-top: 5px;
-    margin-left: 2px;
+    border: 1px solid [[setting:themecolor]] !important;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: -20px;
+}
+
+.yui3-skin-sam .yui3-menu-content,
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {
+    padding: 0 !important;
 }
 
 #custommenu .yui3-menuitem-active,
@@ -70,5 +83,10 @@
 .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-active,
 .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {
     /* background-color: [[setting:themecolor]]; */
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+/* second level deep and beyond */
+.yui3-skin-sam .yui3-menu .yui3-menu .custom_menu_submenu .yui3-menu-content {
+    margin-top: 0;
 }

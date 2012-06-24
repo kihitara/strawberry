@@ -1,5 +1,6 @@
 #dock {
     background-color: [[setting:themecolor]];
+    width: 30px;
 }
 
 #dock .dockedtitle {
@@ -9,6 +10,11 @@
 
 #dock .dockedtitle h2 {
     color: #FFFFFF;
+    text-transform: none;
+}
+
+#dockeditempanel {
+    min-width: 240px;
 }
 
 #dockeditempanel .dockeditempanel_content {
@@ -17,4 +23,9 @@
 
 #dockeditempanel .dockeditempanel_hd {
     border-bottom: none;
+    white-space: normal;
+}
+
+.dock .block_navigation .tree_item {
+    white-space: normal;
 }

@@ -2,7 +2,7 @@
 .course-content .content {
     background-color: transparent;
     padding: 5px;
-    color: #000000;
+    color: #525252;
 }
 
 /** General course boxes **/
@@ -62,10 +62,17 @@
     margin-top: 10px;
 }
 
+/* ---------------- All Modules ---------------- */
+
+.path-mod #region-main .region-content {
+    margin-right: 0;
+}
+
 /* ---------------- Forum ---------------- */
 
 .forumpost {
     border: none;
+    margin-right: 10px;
 }
 
 .forumpost .row .options {
@@ -119,10 +126,12 @@
     max-width: 350px;
 }
 
-/* Fixes the main region going all the way over to the very right of
-  the page when viewing a forum post etc */
-.path-mod #region-main .region-content {
-    margin-right: 10px;
+.path-mod-forum .indent {
+    margin-left: 15px;
+}
+
+.path-mod-forum .navbutton {
+    padding-top: 0;
 }
 
 /* ---------------- Lessons ---------------- */
