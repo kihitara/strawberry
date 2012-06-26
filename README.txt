@@ -46,6 +46,9 @@ If you downloaded from github
   install the Strawberry plugin.
 
 ****************** Change log *******************
+27/06/12
+- Testing github integration with Komodo Edit
+
 24/06/12
 - Strawberry is ready for release into the wild
 
