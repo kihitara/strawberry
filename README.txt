@@ -37,7 +37,7 @@ If you downloaded from Moodle.org
   
 If you downloaded from github
 - Unzip the compressed file
-- Rename 'kihitara-moodle-theme_strawberry-NUMBERS'
+- Rename 'kihitara-strawberry-NUMBERS'
   folder to 'strawberry'
 - Copy the strawberry folder into your Moodle
   theme directory.
@@ -46,6 +46,11 @@ If you downloaded from github
   install the Strawberry plugin.
 
 ****************** Change log *******************
+03/07/12
+- Fixed blocks issues when moving blocks.
+- Removed unnecessary extra blocks code from
+  layout file that wasn't being used.
+
 27/06/12
 - Testing github integration with PhpStorm.
 
