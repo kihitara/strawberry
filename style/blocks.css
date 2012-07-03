@@ -24,36 +24,37 @@
 #page-content #region-main-box {float:left;left:240px;position:relative;width:200%;}
 #page-content #region-post-box {float:left;left:50%;margin-left:-480px;position:relative;width:100%;}
 #page-content #region-main-wrap {float:right;position:relative;right:100%;width:50%;}
-#page-content #region-main {margin-right:0px;margin-left:480px;overflow:hidden;}
+#page-content #region-main {margin-right:0;margin-left:480px;overflow:hidden;}
 #page-content #region-pre {float:left;left:240px;overflow:hidden;position:relative;width:240px;margin-left:-50%;}
-#page-content #region-post {float:left;left:0px;overflow:hidden;position:relative;width:240px;}
+#page-content #region-post {float:left;left:0;overflow:hidden;position:relative;width:240px;}
 
 /** Only side pre **/
 .side-pre-only #page-content #region-post-box {margin-left:-240px;}
 .side-pre-only #page-content #region-main {margin-left:240px;}
-.side-pre-only #page-content #region-pre {left:0px;}
-.side-pre-only #page-content #region-post {width:0px;}
+.side-pre-only #page-content #region-pre {left:0;}
+.side-pre-only #page-content #region-post {width:0;}
 
 /** Only side post **/
-.side-post-only #page-content #region-main-box {left:0px;}
+.side-post-only #page-content #region-main-box {left:0;}
 .side-post-only #page-content #region-post-box {margin-left:-236px;}
 .side-post-only #page-content #region-main {margin-left:236px;}
-.side-post-only #page-content #region-pre {width:0px;}
+.side-post-only #page-content #region-pre {width:0;}
 .has_dock.side-post-only .page-middle #region-main {margin-left:240px;}
 
 /** Moving block when side-post-only **/
-.blocks-moving.side-post-only #page-content #region-main-box {left:240px;width:200%;}
-.blocks-moving.side-post-only #page-content #region-post-box {margin-left:-480px;}
-.blocks-moving.side-post-only #page-content #region-main {margin-left:480px;}
-.blocks-moving.side-post-only #page-content #region-pre {left:240px;width:240px;}
-.blocks-moving.side-post-only #page-content #region-post {left:0px;width:240px;}
+/** Had to remove the .side-post-only bits because they weren't working **/
+.blocks-moving #page-content #region-main-box {left:0;width:200%;}
+.blocks-moving #page-content #region-post-box {margin-left:-236px;}
+.blocks-moving #page-content #region-main {margin-left:236px;}
+.blocks-moving #page-content #region-pre {left:0;width:0;}
+.blocks-moving #page-content #region-post {left:0;width:240px;}
 
 /** No blocks whatsoever **/
 .content-only #page-content {min-width:0;}
-.content-only #page-content #region-main-box {left:0px;}
-.content-only #page-content #region-post-box {margin-left:0px;}
-.content-only #page-content #region-main {margin-left:0px;}
-.content-only #page-content #region-pre {left:0;width:0px;}
+.content-only #page-content #region-main-box {left:0;}
+.content-only #page-content #region-post-box {margin-left:0;}
+.content-only #page-content #region-main {margin-left:0;}
+.content-only #page-content #region-pre {left:0;width:0;}
 .content-only #page-content #region-post {width:0;}
 
 /** Report layout **/
@@ -85,10 +86,7 @@
 .block .header {
     min-height: 25px;
     background-color: #7C896D;
-    padding-top: 2px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 2px;
+    padding: 2px 5px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;
