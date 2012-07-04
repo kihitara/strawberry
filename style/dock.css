@@ -11,6 +11,11 @@
 #dock .dockedtitle h2 {
     color: #FFFFFF;
     text-transform: none;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: Arial, Tahoma, sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 #dockeditempanel {

@@ -48,6 +48,7 @@ If you downloaded from github
 ****************** Change log *******************
 04/07/12
 - Fixed typo in customcssdesc string
+- Improved look of text in dock
 
 03/07/12
 - Fixed blocks issues when moving blocks.
