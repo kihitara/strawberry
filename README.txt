@@ -46,6 +46,10 @@ If you downloaded from github
   install the Strawberry plugin.
 
 ****************** Change log *******************
+08/08/12
+- Third party module Sloodle currency table
+  width fixed for this theme.
+
 04/07/12
 - Fixed typo in customcssdesc string
 - Improved look of text in dock

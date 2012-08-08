@@ -224,3 +224,11 @@
 .pagelayout-report #completion-progress-wrapper {
     overflow: auto;
 }
+
+/* ---------------- Third party modules ---------------- */
+
+/* SLOODLE */
+/* Fixes currency table */
+#page-mod-sloodle-view .c3 input[type="text"] {
+    width: 15em;
+}
