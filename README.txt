@@ -46,6 +46,9 @@ If you downloaded from github
   install the Strawberry plugin.
 
 ****************** Change log *******************
+28/08/12
+- Fixed [[customcssdesc]] error.
+
 08/08/12
 - Third party module Sloodle currency table
   width fixed for this theme.

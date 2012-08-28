@@ -68,7 +68,7 @@ $settings->add($setting);
 // Custom CSS file
 $name = 'theme_strawberry/customcss';
 $title = get_string('customcss','theme_strawberry');
-$description = get_string('customcssdesc', 'theme_aerie');
+$description = get_string('customcssdesc', 'theme_strawberry');
 $setting = new admin_setting_configtextarea($name, $title, $description, '');
 $settings->add($setting);
 
