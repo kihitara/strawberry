@@ -46,6 +46,9 @@ If you downloaded from github
   install the Strawberry plugin.
 
 ****************** Change log *******************
+24/10/12
+- Fixed main content token.
+
 28/08/12
 - Fixed [[customcssdesc]] error.
 
